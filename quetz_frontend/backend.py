@@ -232,6 +232,7 @@ def register(app):
     github_login_available = auth_registry.is_registered("github")
     gitlab_login_available = auth_registry.is_registered("gitlab")
     azuread_login_available = auth_registry.is_registered("azuread")
+    keycloak_login_available = auth_registry.is_registered("keycloak")
 
     config_data = {
         "appName": "Quetz – the fast conda package server!",
@@ -254,6 +255,7 @@ def register(app):
         "gitlab_login_available": gitlab_login_available,
         "google_login_available": google_login_available,
         "azuread_login_available": azuread_login_available,
+        "keycloak_login_available": keycloak_login_available,
         "cacheFiles": False,
         "devMode": False,
         "mode": "multiple-document",

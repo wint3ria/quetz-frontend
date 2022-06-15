@@ -23,6 +23,10 @@ const plugin: QuetzFrontEndPlugin<void> = {
         provider: 'AzureAD',
         api: 'azuread',
       },
+      keycloak_login_available: {
+        provider: 'Keycloak',
+        api: 'keycloak',
+      },
     };
 
     const config_data = document.getElementById('jupyter-config-data');
